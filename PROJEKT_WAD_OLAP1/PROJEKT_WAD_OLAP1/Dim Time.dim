@@ -1,0 +1,319 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="6d79dd74-d8e9-472a-99bf-6028b4a434eb" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Dim Time</ID>
+  <Name>Dim Time</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3989" scrolltop="-5953" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="10319" y="21484" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01ee0000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="dim_time" left="-3393" top="-5688" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="4048" height="4868" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000d00f000004130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_dim_time" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-3989</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-5953</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>-3393</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>-5688</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
+      <Value>
+        <DiagramLayout ZoomPercent="100" ViewPortX="0" ViewPortY="0" xmlns="">
+          <Shapes NodeWidth="121">
+            <Shape Id="Time Key" Expanded="false">
+              <Attributes>
+                <Attribute Id="Time Key" />
+              </Attributes>
+              <Position x="20" y="20" />
+            </Shape>
+            <Shape Id="Arr Time" Expanded="false">
+              <Attributes>
+                <Attribute Id="Arr Time" />
+              </Attributes>
+              <Position x="176" y="20" />
+            </Shape>
+            <Shape Id="Arr Delay" Expanded="false">
+              <Attributes>
+                <Attribute Id="Arr Delay" />
+              </Attributes>
+              <Position x="176" y="68" />
+            </Shape>
+            <Shape Id="Sched Arr Time" Expanded="false">
+              <Attributes>
+                <Attribute Id="Sched Arr Time" />
+              </Attributes>
+              <Position x="176" y="116" />
+            </Shape>
+            <Shape Id="Dep Delay" Expanded="false">
+              <Attributes>
+                <Attribute Id="Dep Delay" />
+              </Attributes>
+              <Position x="176" y="164" />
+            </Shape>
+            <Shape Id="Sched Dep Time" Expanded="false">
+              <Attributes>
+                <Attribute Id="Sched Dep Time" />
+              </Attributes>
+              <Position x="176" y="212" />
+            </Shape>
+            <Shape Id="Dep Time" Expanded="false">
+              <Attributes>
+                <Attribute Id="Dep Time" />
+              </Attributes>
+              <Position x="176" y="260" />
+            </Shape>
+          </Shapes>
+        </DiagramLayout>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="40e47921-c0e6-41cc-a1c5-af0a37c7e2d1">
+    <DataSourceViewID>Flights</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="ea687a85-5a7e-424f-ab1b-03d5f10c8fb7">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="497da487-a350-4c09-baaa-e9614b1d05c1">
+      <ID>Time Key</ID>
+      <Name>Time Key</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7e4fcd7c-554c-41f1-83b9-8b1b1005486a">
+          <DataType>Integer</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d6582020-5816-41b5-8136-1fb22e5385a5">
+            <TableID>dbo_dim_time</TableID>
+            <ColumnID>time_key</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="f91d88d8-c07a-462d-8e1e-afe65c596664">
+          <AttributeID>Dep Time</AttributeID>
+          <Name>Dep Time</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="7d65e1f6-50d8-4fdf-b645-0882a4f69ca4">
+          <AttributeID>Sched Dep Time</AttributeID>
+          <Name>Sched Dep Time</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="da90d347-0b2a-45ba-b9bd-a6aca4a09943">
+          <AttributeID>Dep Delay</AttributeID>
+          <Name>Dep Delay</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="708e6fdb-e956-48e7-bb77-1cafa20b7925">
+          <AttributeID>Sched Arr Time</AttributeID>
+          <Name>Sched Arr Time</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="4f24d5e1-66b2-49fe-85ac-828ea93044f1">
+          <AttributeID>Arr Delay</AttributeID>
+          <Name>Arr Delay</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="5089152e-ed41-4557-aa35-803055dff382">
+          <AttributeID>Arr Time</AttributeID>
+          <Name>Arr Time</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="7edabda7-da1d-4bca-bb2b-532c1b04ee28">
+      <ID>Dep Time</ID>
+      <Name>Dep Time</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="458afa25-a18a-42db-afce-91914be55c53">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c7e3afca-9877-453c-a134-4ca577863bc8">
+            <TableID>dbo_dim_time</TableID>
+            <ColumnID>dep_time</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e076786e-c421-47be-b59f-9c149a0397fd">
+      <ID>Sched Dep Time</ID>
+      <Name>Sched Dep Time</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b6762f72-7cab-41fd-838a-2b703e8f2a92">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="40bf2cc4-fe56-44cf-a405-0959dd695af5">
+            <TableID>dbo_dim_time</TableID>
+            <ColumnID>sched_dep_time</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="114c4953-44e6-4b45-90c8-53d30658d3a6">
+      <ID>Dep Delay</ID>
+      <Name>Dep Delay</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="67b757ad-50f9-47c5-a6b5-49413425c019">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="341eb8dd-dd07-40d4-887e-d23d10c18cf3">
+            <TableID>dbo_dim_time</TableID>
+            <ColumnID>dep_delay</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e5f2652b-3116-4989-9313-329c6137dfc4">
+      <ID>Sched Arr Time</ID>
+      <Name>Sched Arr Time</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="dc9fc455-5f6f-4b16-8bd9-7298f7652025">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="070b6d1b-cfbd-4233-9d96-beb0afa784bf">
+            <TableID>dbo_dim_time</TableID>
+            <ColumnID>sched_arr_time</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="3a6bd87c-426f-4da6-8ed1-ff9778634136">
+      <ID>Arr Delay</ID>
+      <Name>Arr Delay</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a25e6573-c43e-471f-b059-c13baeaedd51">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8bcb43cb-59dd-4106-8dd2-b278c8a9ea73">
+            <TableID>dbo_dim_time</TableID>
+            <ColumnID>arr_delay</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="561ba972-fd4e-4ac7-927b-0d4562375136">
+      <ID>Arr Time</ID>
+      <Name>Arr Time</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="615078e0-3a5d-490a-93a8-7ebaf456db6c">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c0cfabb5-8b4e-403e-8d7b-4e21b6476cb0">
+            <TableID>dbo_dim_time</TableID>
+            <ColumnID>arr_time</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="686d75ac-d0e5-49e6-82d7-c03f4c860116">
+      <ID>Hierarchy</ID>
+      <Name>Departure_Time_Hierarchy</Name>
+      <Levels>
+        <Level dwd:design-time-name="6df7da68-206a-4603-9997-cb01f0778d46">
+          <ID>Dep Time</ID>
+          <Name>Dep Time</Name>
+          <SourceAttributeID>Dep Time</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="93d7218e-0ac4-4140-9b3d-51ab609acd40">
+          <ID>Sched Dep Time</ID>
+          <Name>Sched Dep Time</Name>
+          <SourceAttributeID>Sched Dep Time</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="4cdc2ed2-e8df-4dbb-8034-8531552714d5">
+          <ID>Dep Delay</ID>
+          <Name>Dep Delay</Name>
+          <SourceAttributeID>Dep Delay</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="f463f5b4-f3b4-44fd-a58a-1410d476b435">
+      <ID>Hierarchy 1</ID>
+      <Name>Arrival_Time_Hierarchy</Name>
+      <Levels>
+        <Level dwd:design-time-name="08deeef0-e178-4837-8945-eb7405a08d35">
+          <ID>Arr Time</ID>
+          <Name>Arr Time</Name>
+          <SourceAttributeID>Arr Time</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="c8afec5f-7bdd-4a9e-9523-be9ba9e6cedb">
+          <ID>Sched Arr Time</ID>
+          <Name>Sched Arr Time</Name>
+          <SourceAttributeID>Sched Arr Time</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="c7a90713-c59f-4513-823b-2541ad767003">
+          <ID>Arr Delay</ID>
+          <Name>Arr Delay</Name>
+          <SourceAttributeID>Arr Delay</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

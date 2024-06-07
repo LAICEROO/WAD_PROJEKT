@@ -1,0 +1,236 @@
+﻿<MiningStructure xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="06610b56-17c9-40ef-bd45-a1e04e0f1170" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>flight delay prediction</ID>
+  <Name>Departur Delay Prediction</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>MDXFilterComponent</Name>
+      <Value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;Filter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/SQLServer/reporting/QuerySpecification"&gt;&lt;FilterItems xmlns="http://schemas.microsoft.com/AnalysisServices/QueryDefinition" /&gt;&lt;/Filter&gt;</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="CubeDimensionBinding" dwd:design-time-name="91109006-d686-4ed9-92c1-105480663dd2">
+    <DataSourceID>.</DataSourceID>
+    <CubeID>Flights</CubeID>
+    <CubeDimensionID>Dim Flight</CubeDimensionID>
+    <Filter></Filter>
+  </Source>
+  <Columns>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="b66e03dc-6e9e-4122-92eb-779dd22b3f89">
+      <ID>Flight Key</ID>
+      <Name>Flight Key</Name>
+      <IsKey>true</IsKey>
+      <Type>Long</Type>
+      <Source xsi:type="CubeAttributeBinding" dwd:design-time-name="34bf35fa-ffc7-4866-85de-c661a715a2e9">
+        <CubeID>Flights</CubeID>
+        <CubeDimensionID>Dim Flight</CubeDimensionID>
+        <AttributeID>Flight Key</AttributeID>
+        <Type>All</Type>
+      </Source>
+      <Content>Key</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="9382873a-3a97-47e9-9911-7d6c7e06399b">
+      <ID>Carrier</ID>
+      <Name>Carrier</Name>
+      <Type>Text</Type>
+      <Source xsi:type="CubeAttributeBinding" dwd:design-time-name="12c4bdb4-3b9e-4468-bba1-842b268cf086">
+        <CubeID>Flights</CubeID>
+        <CubeDimensionID>Dim Flight</CubeDimensionID>
+        <AttributeID>Carrier</AttributeID>
+        <Type>All</Type>
+      </Source>
+      <Content>Discrete</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="c75f4073-3c6f-42a4-b818-76d90c357f9d">
+      <ID>Flight</ID>
+      <Name>Flight</Name>
+      <Type>Long</Type>
+      <Source xsi:type="CubeAttributeBinding" dwd:design-time-name="d9132117-d463-4352-a7a6-a4fd2a93c17f">
+        <CubeID>Flights</CubeID>
+        <CubeDimensionID>Dim Flight</CubeDimensionID>
+        <AttributeID>Flight</AttributeID>
+        <Type>All</Type>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="b09ef814-f9e2-4c1a-afdf-62cc6f1ef4d8">
+      <ID>Tailnum</ID>
+      <Name>Tailnum</Name>
+      <Type>Text</Type>
+      <Source xsi:type="CubeAttributeBinding" dwd:design-time-name="4926f1a0-8fc5-4bf8-8699-262b640a0963">
+        <CubeID>Flights</CubeID>
+        <CubeDimensionID>Dim Flight</CubeDimensionID>
+        <AttributeID>Tailnum</AttributeID>
+        <Type>All</Type>
+      </Source>
+      <Content>Discrete</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="212318d7-5c9c-4d5d-a12f-0c1eb1215f47">
+      <ID>Average Flights</ID>
+      <Name>Average Flights</Name>
+      <Type>Long</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="84a68bba-85e6-421e-85b2-fe1c08fffcfa">
+        <MeasureID>Id</MeasureID>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="25c12406-b67d-4a43-b10c-52a240675ee8">
+      <ID>Total Arrivals</ID>
+      <Name>Total Arrivals</Name>
+      <Type>Long</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="14061466-59ab-4029-adbb-9d2a851c1f35">
+        <MeasureID>Fact Flights Count 1</MeasureID>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="beb43b79-3d78-4fef-8144-4ec7b4387bb7">
+      <ID>Total Departures</ID>
+      <Name>Total Departures</Name>
+      <Type>Long</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="2eb1a012-7169-4c05-80e5-9d5c39536611">
+        <MeasureID>Fact Flights Count</MeasureID>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="0bcc29bd-d3be-47b2-b23c-ebeaeca7dc41">
+      <ID>Total Flights</ID>
+      <Name>Total Flights</Name>
+      <Type>Long</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="98cdb051-d4de-48e6-a288-8f0e4caf21b7">
+        <MeasureID>Fact Flights Count 2</MeasureID>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="6d9bab0a-3c56-403e-b9b8-4edd6c36c396">
+      <ID>On-Time Arrival Rate</ID>
+      <Name>On-Time Arrival Rate</Name>
+      <Type>Double</Type>
+      <Source xsi:type="CalculatedMeasureBinding" dwd:design-time-name="fed7a0f3-b2fa-4337-a751-8151115aa9fa">
+        <MeasureName>[Measures].[On-Time Arrival Rate]</MeasureName>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+  </Columns>
+  <MiningModels>
+    <MiningModel dwd:design-time-name="71a87f74-c7f5-416a-831d-9000b525369f">
+      <ID>Dim Flight</ID>
+      <Name>Dim Flight</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Algorithm>Microsoft_Decision_Trees</Algorithm>
+      <Columns>
+        <Column dwd:design-time-name="85020e50-d7f1-48ed-bfd1-13078203e9c5">
+          <ID>Flight Key</ID>
+          <Name>Flight Key</Name>
+          <SourceColumnID>Flight Key</SourceColumnID>
+          <Usage>Key</Usage>
+        </Column>
+        <Column dwd:design-time-name="5fdedc28-9c19-4f04-b8a3-7fa291e9fa13">
+          <ID>Carrier</ID>
+          <Name>Carrier</Name>
+          <SourceColumnID>Carrier</SourceColumnID>
+          <Usage>Predict</Usage>
+        </Column>
+        <Column dwd:design-time-name="59337871-9949-404a-9248-8b752bb8f582">
+          <ID>Flight</ID>
+          <Name>Flight</Name>
+          <SourceColumnID>Flight</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="6f6627d3-5c57-40d6-bb2c-fe03ac9c3cbc">
+          <ID>Tailnum</ID>
+          <Name>Tailnum</Name>
+          <SourceColumnID>Tailnum</SourceColumnID>
+          <Usage>Predict</Usage>
+        </Column>
+        <Column dwd:design-time-name="d0f65a12-3806-45ea-8b6b-5e0c331720de">
+          <ID>Average Flights</ID>
+          <Name>Average Flights</Name>
+          <SourceColumnID>Average Flights</SourceColumnID>
+          <Usage>Predict</Usage>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="6ec38181-8e43-4c6f-9cee-587b04157eb6">
+          <ID>Total Arrivals</ID>
+          <Name>Total Arrivals</Name>
+          <SourceColumnID>Total Arrivals</SourceColumnID>
+          <Usage>Predict</Usage>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="a2f73a9c-f6c6-4059-a9c7-7fdaecff72ab">
+          <ID>Total Departures</ID>
+          <Name>Total Departures</Name>
+          <SourceColumnID>Total Departures</SourceColumnID>
+          <Usage>Predict</Usage>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="8e6aca23-43c3-42aa-990d-13a7743df7f0">
+          <ID>Total Flights</ID>
+          <Name>Total Flights</Name>
+          <SourceColumnID>Total Flights</SourceColumnID>
+          <Usage>Predict</Usage>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="0c4398de-6d20-4d35-9fb0-ce51a5cb4b45">
+          <ID>On-Time Arrival Rate</ID>
+          <Name>On-Time Arrival Rate</Name>
+          <SourceColumnID>On-Time Arrival Rate</SourceColumnID>
+          <Usage>Predict</Usage>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+      </Columns>
+    </MiningModel>
+  </MiningModels>
+  <ddl100_100:HoldoutMaxPercent>30</ddl100_100:HoldoutMaxPercent>
+</MiningStructure>

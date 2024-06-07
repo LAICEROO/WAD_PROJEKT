@@ -1,0 +1,117 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>PROJEKT_WAD_OLAP</Database>
+    <Server>MATEUSZ\PROJEKT_WAD</Server>
+    <ConnectionString>Data Source=MATEUSZ\PROJEKT_WAD;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>DoNotProcess</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>brsKn54nbf25gaxcNxCvGS/t6TQ=31/05/2024 00:30:2607/06/2024 19:27:36</TimeStamp>
+        <ID>
+          <String>Flights</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>olEcEO1pn69Xge7oXplEfk3GMKs=05/06/2024 14:55:5607/06/2024 19:27:36</TimeStamp>
+        <ID>
+          <String>Flights</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>La3ASY44g5hbVt5VonzNnpmKdSk=05/06/2024 14:55:5607/06/2024 19:27:36</TimeStamp>
+        <ID>
+          <String>Dim Flight</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>1F/ytLjbcOV5SPKIyja8pNoRNV0=05/06/2024 14:55:5607/06/2024 19:27:36</TimeStamp>
+        <ID>
+          <String>Dim Airport</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>o518pGwVlwU5GKVy7s0SjMkdDKA=05/06/2024 14:55:5607/06/2024 19:27:36</TimeStamp>
+        <ID>
+          <String>Dim Distance</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>JmwsGIPmOmow913LWPvw2bWdnwc=05/06/2024 14:55:5607/06/2024 19:27:36</TimeStamp>
+        <ID>
+          <String>Dim Time</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>TUEQfl9vh33tiU5I29kQ4TOHi9k=05/06/2024 14:55:5607/06/2024 19:27:36</TimeStamp>
+        <ID>
+          <String>Dim Date</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>3WQXU/v7olKCM0P+hpPne4GEhWU=07/06/2024 19:39:0007/06/2024 19:27:364cz6f+SZPKI0OZYzpy5UvjZI9WE=03/06/2024 18:28:0607/06/2024 19:27:36</TimeStamp>
+        <ID>
+          <String>Flights</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.MiningStructure</Type>
+        <TimeStamp>NosMrZJCy0MG9EC7F7MWhdDTp+E=03/06/2024 23:05:4407/06/2024 19:27:36</TimeStamp>
+        <ID>
+          <String>flight delay prediction</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.MiningStructure</Type>
+        <TimeStamp>ZProXzQbUc+W6qMMkzNhXfyFK+M=03/06/2024 21:16:1607/06/2024 19:27:36</TimeStamp>
+        <ID>
+          <String>Predict Flight Delay</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.MiningStructure</Type>
+        <TimeStamp>eY/eWdOs3+gF7SiYm9ub2a6E0To=03/06/2024 23:11:3207/06/2024 19:27:36</TimeStamp>
+        <ID>
+          <String>Sched Arr Time</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.MiningStructure</Type>
+        <TimeStamp>dHyMK01FfEVnbid2w2reqe9Mxs4=04/06/2024 08:47:5107/06/2024 19:27:36</TimeStamp>
+        <ID>
+          <String>Arr Delay Pred</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>pCb1o5cFJ90kKgAsSjwP873qtJw=30/05/2024 17:35:3307/06/2024 19:27:36</TimeStamp>
+      <ID>
+        <String>PROJEKT_WAD_OLAP</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2024-06-07T17:39:02.886667Z</LastDeployed>
+</DeploymentSnapshot>
